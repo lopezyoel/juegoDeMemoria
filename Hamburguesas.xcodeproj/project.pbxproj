@@ -12,6 +12,7 @@
 		4C8AF06B1C0A55F7002D684E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AF0691C0A55F7002D684E /* Main.storyboard */; };
 		4C8AF06D1C0A55F7002D684E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AF06C1C0A55F7002D684E /* Assets.xcassets */; };
 		4C8AF0701C0A55F7002D684E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AF06E1C0A55F7002D684E /* LaunchScreen.storyboard */; };
+		4C8AF0781C0A564C002D684E /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AF0771C0A564C002D684E /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4C8AF06C1C0A55F7002D684E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8AF06F1C0A55F7002D684E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8AF0711C0A55F7002D684E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8AF0771C0A564C002D684E /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Datos.swift; path = Hamburguesas/Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		4C8AF0591C0A55F7002D684E = {
 			isa = PBXGroup;
 			children = (
+				4C8AF07A1C0A61B7002D684E /* Datos */,
 				4C8AF0641C0A55F7002D684E /* Hamburguesas */,
 				4C8AF0631C0A55F7002D684E /* Products */,
 			);
@@ -62,6 +65,14 @@
 				4C8AF0711C0A55F7002D684E /* Info.plist */,
 			);
 			path = Hamburguesas;
+			sourceTree = "<group>";
+		};
+		4C8AF07A1C0A61B7002D684E /* Datos */ = {
+			isa = PBXGroup;
+			children = (
+				4C8AF0771C0A564C002D684E /* Datos.swift */,
+			);
+			name = Datos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					4C8AF0611C0A55F7002D684E = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = D5K36CM742;
 					};
 				};
 			};
@@ -137,6 +149,7 @@
 			files = (
 				4C8AF0681C0A55F7002D684E /* ViewController.swift in Sources */,
 				4C8AF0661C0A55F7002D684E /* AppDelegate.swift in Sources */,
+				4C8AF0781C0A564C002D684E /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hamburguesas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claryen.Hamburguesas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hamburguesas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claryen.Hamburguesas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
